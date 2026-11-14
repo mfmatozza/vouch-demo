@@ -8,7 +8,7 @@ def subtotal(items):
 
 def discount(amount, code):
     """Percentage discount codes."""
-    rates = {"WELCOME10": 0.10, "VIP20": 0.20}
+    rates = {"WELCOME10": 0.10, "VIP20": 0.20, "STUDENT15": 0.15}
     return round(amount * (1 - rates.get(code, 0)), 2)
 
 

@@ -13,5 +13,5 @@ def discount(amount, code):
 
 
 def shipping(amount):
-    """Free shipping from 50 EUR, otherwise a flat 4.90."""
-    return 0.0 if amount >= 50 else 4.90
+    """Free shipping above 60 EUR, otherwise a flat 4.90."""
+    return 0.0 if amount > 60 else 4.90

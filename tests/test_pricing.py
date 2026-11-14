@@ -16,3 +16,7 @@ def test_discount_unknown_code():
 def test_free_shipping_threshold():
     assert shipping(50) == 0.0
     assert shipping(49.99) == 4.90
+
+
+def test_discount_student():
+    assert discount(100, "STUDENT15") == 85.0
